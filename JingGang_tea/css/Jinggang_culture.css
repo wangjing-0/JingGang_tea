@@ -1,0 +1,59 @@
+.big_title{
+    font-size: 50px;
+}
+.first_container{
+    background-color: #789262;
+}
+.traditionalculture{
+    background-color:#f0f5e5 ;
+}
+/* 诗词主体部分 */
+.poem {
+    font-family: "KaiTi", "楷体", serif;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+/* 题目 */
+.title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+/* 作者 */
+.author {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #555;
+}
+/* 诗句 */
+.line {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    letter-spacing: 0.1em; /* 增加字距，更符合诗歌排版 */
+}
+
+
+/* 书画部分 ：瀑布流展示*/
+.waterfall-width-column {  
+    column-count: 3;  
+    column-gap: 10px;  
+    padding: 0 10px; /* 两侧留出 10px 的间距 */  
+  }  
+  .image-box {  
+    margin-bottom: 10px;  
+    text-align: center; /* 居中对齐标题 */  
+    break-inside: avoid; /* 防止图片和标题换列 */
+    background-color: pink; 
+    padding: 0 5px; 
+  }  
+  .image-box img {  
+    display: block;  
+    width: 100%;  
+  }  
+  .image-box .title {  
+    font-family: "KaiTi", "楷体", serif;  
+    margin-top: 5px;  
+    font-size: 1.5em;  
+  }  

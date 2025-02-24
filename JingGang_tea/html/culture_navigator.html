@@ -1,0 +1,79 @@
+<!DOCTYPE html>  
+<html lang="en">  
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>导航栏</title>
+    <link rel="stylesheet" href="../css/common.css">  
+    <style>  
+        /* 通用样式重置 */  
+        * {  
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+        }  
+
+        /* 导航栏样式 */  
+        .navbar {  
+            width: 100%;  
+            background-color: #789262; /* 导航栏背景色 */  
+            color: white;  
+            position: fixed; /* 固定在页面顶部 */  
+            top: 0;  
+            left: 0;  
+            z-index: 1000;  
+        }  
+
+        /* 居中容器 */  
+        .navbar-container {  
+            max-width: 1550px; /* 最大宽度 */  
+            width: 90%; /* 使用百分比宽度，适配不同屏幕 */  
+            margin: 0 auto; /* 居中对齐 */  
+            display: flex;  
+            justify-content: flex-end; /* 内容右对齐 */  
+            align-items: center;  
+            height: 60px; /* 导航栏高度 */  
+        }  
+
+        /* 链接样式 */  
+        .navbar-title {  
+            font-family: 'm1Font'; /* 使用古风字体 */  
+            font-size: 1.5rem; /* 使用相对单位，适配缩放 */  
+            color: white;  
+            margin-left: 30px; /* 标题之间的间距 */  
+            text-decoration: none; /* 去掉超链接下划线 */  
+            cursor: pointer; /* 鼠标悬停时显示手型 */  
+            transition: color 0.3s ease; /* 添加悬停效果 */  
+        }  
+
+        .navbar-title:hover {  
+            color: #2c4a3e; /* 悬停时标题颜色变化 */  
+        }  
+
+        /* 响应式调整 */  
+        @media (max-width: 768px) {  
+            .navbar-container {  
+                justify-content: center; /* 小屏幕时标题居中 */  
+            }  
+
+            .navbar-title {  
+                font-size: 1.2rem; /* 缩小字体大小 */  
+                margin-left: 15px; /* 减小标题间距 */  
+            }  
+        }  
+    </style>  
+</head>  
+
+<body>  
+    <!-- 导航栏 -->  
+    <div class="navbar">  
+        <div class="navbar-container">  
+            <a href="./Jinggang_culture.html" class="navbar-title">茶风遗韵</a>  
+            <a href="./time.html" class="navbar-title">翠绿渊源</a>  
+            <a href="#" class="navbar-title">红史茶魂</a>  
+        </div>  
+    </div>  
+</body>  
+
+</html>
